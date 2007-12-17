@@ -9,7 +9,6 @@ License:	GPL or Artistic
 Group:		System/Configuration/Networking
 URL:		http://iNDev.iNsu.COM/IPv4Addr/
 BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch:	noarch
 
 %description
