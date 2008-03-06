@@ -1,7 +1,7 @@
 Summary:	Perl modules to manipulates Ipv4 addresses
 Name:		perl-Net-IPv4Addr
 Version:	0.10
-Release:	%mkrel 9
+Release:	%mkrel 10
 
 Source:		http://iNDev.iNsu.COM/sources/Net-IPv4Addr-%{version}.tar.bz2
 
