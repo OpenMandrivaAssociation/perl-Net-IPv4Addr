@@ -1,16 +1,18 @@
+%define upstream_name    Net-IPv4Addr
+%define upstream_version 0.10
+
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Perl modules to manipulates Ipv4 addresses
-Name:		perl-Net-IPv4Addr
-Version:	0.10
-Release:	%mkrel 11
-
-Source:		http://iNDev.iNsu.COM/sources/Net-IPv4Addr-%{version}.tar.bz2
-
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		System/Configuration/Networking
-URL:		http://iNDev.iNsu.COM/IPv4Addr/
-BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
+Url:		http://iNDev.iNsu.COM/IPv4Addr/
+Source0:	http://iNDev.iNsu.COM/sources/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Net::IPv4Addr provides methods for parsing IPv4 addresses both in traditional
@@ -19,7 +21,7 @@ calculating the network and broadcast address and also to see check if a given
 address is in a specific network.
 
 %prep
-%setup -q -n Net-IPv4Addr-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor 
@@ -45,5 +47,3 @@ rm -fr $RPM_BUILD_ROOT
 %{_sbindir}/ipv4calc
 %{perl_vendorlib}/Net/*
 %{perl_vendorlib}/auto/Net/*
-
-
