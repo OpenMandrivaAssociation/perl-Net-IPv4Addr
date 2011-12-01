@@ -31,14 +31,14 @@ make
 make test
 
 %install
-rm -fr $RPM_BUILD_ROOT
+rm -fr %{buildroot}
 %makeinstall_std
 
-install -d $RPM_BUILD_ROOT%{_sbindir}
-mv -f $RPM_BUILD_ROOT%{_bindir}/ipv4calc $RPM_BUILD_ROOT%{_sbindir}/ipv4calc
+install -d %{buildroot}%{_sbindir}
+mv -f %{buildroot}%{_bindir}/ipv4calc %{buildroot}%{_sbindir}/ipv4calc
 
 %clean
-rm -fr $RPM_BUILD_ROOT
+rm -fr %{buildroot}
 
 %files 
 %defattr(-,root,root)
