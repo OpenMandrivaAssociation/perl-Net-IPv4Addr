@@ -4,7 +4,7 @@
 Summary:	Perl modules to manipulates Ipv4 addresses
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	8
+Release:	9
 License:	GPLv2+ or Artistic
 Group:		System/Configuration/Networking
 Url:		http://iNDev.iNsu.COM/IPv4Addr/
