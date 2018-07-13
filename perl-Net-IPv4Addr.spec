@@ -10,6 +10,7 @@ Group:		System/Configuration/Networking
 Url:		http://iNDev.iNsu.COM/IPv4Addr/
 Source0:	http://iNDev.iNsu.COM/sources/%{modname}-%{modver}.tar.bz2
 BuildArch:	noarch
+BuildRequires:	perl(Test)
 BuildRequires:	perl-devel
 
 %description
