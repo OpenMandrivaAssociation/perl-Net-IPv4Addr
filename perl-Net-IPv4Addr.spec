@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	17
 License:	GPLv2+ or Artistic
 Group:		System/Configuration/Networking
-Url:		http://iNDev.iNsu.COM/IPv4Addr/
+Url:		https://iNDev.iNsu.COM/IPv4Addr/
 Source0:	http://iNDev.iNsu.COM/sources/%{modname}-%{modver}.tar.bz2
 BuildArch:	noarch
 BuildRequires:	perl(Test)
