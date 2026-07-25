@@ -3,12 +3,12 @@
 
 Summary:	Perl modules to manipulates Ipv4 addresses
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	17
+Version:	%{modver}
+Release:	18
 License:	GPLv2+ or Artistic
 Group:		System/Configuration/Networking
 Url:		https://iNDev.iNsu.COM/IPv4Addr/
-Source0:	http://iNDev.iNsu.COM/sources/%{modname}-%{modver}.tar.bz2
+Source0:	https://cpan.metacpan.org/authors/id/F/FR/FRAJULAC/Net-IPv4Addr-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl(Test)
