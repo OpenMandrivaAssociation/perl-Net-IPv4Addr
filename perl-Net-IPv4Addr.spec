@@ -1,10 +1,10 @@
-%define modname	Net-IPv4Addr
-%define modver	0.10
+%define modname Net-IPv4Addr
+%define modver 0.10
 
 Summary:	Perl modules to manipulates Ipv4 addresses
 Name:		perl-%{modname}
 Version:	%{modver}
-Release:	18
+Release:	20
 License:	GPLv2+ or Artistic
 Group:		System/Configuration/Networking
 Url:		https://iNDev.iNsu.COM/IPv4Addr/
@@ -33,12 +33,10 @@ make test
 %install
 %makeinstall_std
 
-install -d %{buildroot}%{_sbindir}
-mv -f %{buildroot}%{_bindir}/ipv4calc %{buildroot}%{_sbindir}/ipv4calc
 
 %files 
 %doc README ChangeLog
-%{_sbindir}/ipv4calc
+%{_bindir}/ipv4calc
 %{perl_vendorlib}/Net/*
 %{perl_vendorlib}/auto/Net/*
 %{_mandir}/man1/*
